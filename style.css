@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --yellow:#f4d04e;
+    --white: #ffffff;
+    --grey:#808080;
+    --black:#000000;
+    --font-P: 'Figtree', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    background-color: var(--yellow);
+    font-family: var(--font-P);
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog__container{
+    background-color: var(--white);
+    max-width: 350px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    box-shadow: 10px 10px 0px var(--black);
+}
+
+.container__img{
+    width: 90%;
+    margin: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.container__btn{
+    padding: 5px 12px;
+    background-color: var(--yellow);
+    color: var(--black);
+    border: none;
+    font-weight: 800;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.container__container-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__btn, .container__span, .container__h1, .container__p{
+    margin: 5px 20px;
+    align-self: flex-start;
+}
+
+.container__span{
+    font-weight: 500;
+}
+
+.container__h1{
+    font-weight: 800;
+    font-size: 1.4em;
+}
+
+.container__p{
+    font-weight: 500;
+    color: var(--grey);
+    line-height: 1.4;
+}
+
+.container__icon-name{
+    width: 100%;
+    display: flex;
+    flex-direction: inline-block;
+    align-items: center;
+}
+
+.container__icon-name img{
+    width: 30px;
+    margin: 20px;
+    align-self: flex-start;
+}
+
+.container__icon-name span{
+    font-weight: 800;
+}
+
+@media screen and (max-width: 375px) {
+    .blog__container{
+        width: 80dvw;
+    }
+}
